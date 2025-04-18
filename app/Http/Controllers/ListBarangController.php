@@ -8,7 +8,6 @@ class ListBarangController extends Controller
 {
     public function getData()
     {
-        // Logika untuk mendapatkan array data
         $dataBarang = [
             ['id' => 1, 'nama' => 'Beras Pandan Wangi', 'harga' => 15000],
             ['id' => 2, 'nama' => 'Tepung Terigu', 'harga' => 20000],
@@ -23,6 +22,6 @@ class ListBarangController extends Controller
     public function tampilkan()
     {
         $data = $this->getData();
-        return view('list_barang', compact('data'));
+        return view('list_barang', compact('data')); //  mengirim $data ke view
     }
 }
